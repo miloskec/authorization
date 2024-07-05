@@ -1,0 +1,17 @@
+
+   INFO  Nothing to migrate.  
+
+Migration successful in authorization
+
+   INFO  Seeding database.  
+
+
+In RoleAlreadyExists.php line 11:
+                                                  
+  A role `admin` already exists for guard `web`.  
+                                                  
+
+Seeding failed in authorization
+Seeding failed in authorization
+Starting Kafka consumer...
+Starting Kafka consumer...
