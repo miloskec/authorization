@@ -12,10 +12,10 @@ class CheckPermissionsController extends Controller
     {
         $username = $request->input('username');
         $email = $request->input('email');
-        Log::channel('authorization')->info(json_encode(array($username, $email)));
+        Log::channel('authorization')->info(json_encode([$username, $email]));
         $user = User::where('username', $username)->where('email', $email)->first();
         Log::channel('authorization')->info($user);
-        if (!$user) {
+        if (! $user) {
             return response()->json(['error' => 'User not found'], 404);
         }
         Log::channel('authorization')->info(User::find(1)->getAllPermissions());
@@ -28,7 +28,7 @@ class CheckPermissionsController extends Controller
             'direct_permissions' => $directPermissions,
             'role_permissions' => $rolePermissions,
             'all_permissions' => $allPermissions,
-            'roles' => $roles
+            'roles' => $roles,
         ]);
     }
 
@@ -36,19 +36,19 @@ class CheckPermissionsController extends Controller
     {
         $username = $request->input('username');
         $email = $request->input('email');
-        
-        Log::channel('authorization')->info(json_encode(array($username, $email)));
+
+        Log::channel('authorization')->info(json_encode([$username, $email]));
         $user = User::where('username', $username)->where('email', $email)->first();
         Log::channel('authorization')->info($user);
-        
-        if (!$user) {
+
+        if (! $user) {
             return response()->json(['error' => 'User not found'], 404);
         }
 
         $roles = $user->getRoleNames();
 
         return response()->json([
-            'roles' => $roles
+            'roles' => $roles,
         ]);
     }
 }
