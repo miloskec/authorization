@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -22,19 +21,19 @@ class RoleSeeder extends Seeder
         // Assign permissions to roles
         Permission::create(['name' => 'profile.show']);
         Permission::create(['name' => 'admin.panel']);
-        
+
         $adminRole->givePermissionTo('profile.show');
         $adminRole->givePermissionTo('admin.panel');
 
         $userRole->givePermissionTo('profile.show');
 
-        /* 
+        /*
         // Assign roles to users
         $adminUser = User::find(1); // Admin user
         $adminUser->assignRole('admin');
 
         $normalUser = User::find(2); // Normal user
-        $normalUser->assignRole('user'); 
+        $normalUser->assignRole('user');
         */
     }
 }
