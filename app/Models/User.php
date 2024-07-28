@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Activitylog\LogOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Permission\Traits\HasRoles;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
 /**
  * @property int $id
@@ -18,7 +19,7 @@ use Spatie\Permission\Traits\HasRoles;
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
  */
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use HasFactory, HasRoles, Notifiable, LogsActivity;
 
@@ -28,12 +29,23 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'email',
         'username',
         'full_name',
         'email',
         'user_id',
     ];
+
+    // Get the identifier that will be stored in the subject claim of the JWT.
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    // Return a key-value array, containing any custom claims to be added to the JWT.
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
 
     /**
      * Get the activity log options for the model.

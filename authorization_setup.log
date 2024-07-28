@@ -217,3 +217,4 @@ In Consumer.php line 437:
 %5|1721293350.103|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out LeaveGroupRequest in flight (after 5013ms, timeout #0): possibly held back by preceeding blocking JoinGroupRequest with timeout in 297871ms
 %4|1721293350.103|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
 %3|1721293350.103|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: 1 request(s) timed out: disconnect (after 6033ms in state UP, 1 identical error(s) suppressed)
+Starting Kafka consumer...
