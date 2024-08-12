@@ -1,0 +1,123 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authorization-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authorization
+  template:
+    metadata:
+      labels:
+        app: authorization
+    spec:
+      containers:
+      - name: authorization
+        image: miloskec/authorization:latest
+        env:
+        - name: DB_HOST
+          value: "mysql-authorization-service"
+        - name: DB_PORT
+          value: "3306"
+        - name: DB_DATABASE
+          value: "laravel"
+        - name: DB_USERNAME
+          value: "sail"
+        - name: DB_PASSWORD
+          value: "password"
+        - name: JWT_TTL
+          value: "600"
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: app-authorization-storage-logs
+          mountPath: /var/www/html/storage/logs
+        - name: app-authorization-logs
+          mountPath: /var/www/html/logs
+      volumes:
+      - name: app-authorization-storage-logs
+        persistentVolumeClaim:
+          claimName: app-authorization-pslc
+      - name: app-authorization-logs
+        persistentVolumeClaim:
+          claimName: app-authorization-plc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: authorization-service
+spec:
+  type: ClusterIP
+  selector:
+    app: authorization
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: app-authorization-storage-logs
+  labels:
+    type: app-authorization-storage-logs
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+  - ReadWriteOnce
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Delete # Change to Retain
+  storageClassName: standard
+  hostPath:
+    path: /mnt/sauthorizationlogs
+    type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: app-authorization-pslc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: standard
+  selector:
+    matchLabels:
+      type: app-authorization-storage-logs
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: app-authorization-logs
+  labels:
+    type: app-authorization-logs
+spec:
+  capacity:
+    storage: 5Gi
+  accessModes:
+  - ReadWriteOnce
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Delete # Change to Retain
+  storageClassName: standard
+  hostPath:
+    path: /mnt/authorizationlogs
+    type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: app-authorization-plc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: standard
+  selector:
+    matchLabels:
+      type: app-authorization-logs
