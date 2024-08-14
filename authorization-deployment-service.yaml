@@ -15,6 +15,7 @@ spec:
       containers:
       - name: authorization
         image: miloskec/authorization:latest
+        imagePullPolicy: Always
         env:
         - name: DB_HOST
           value: "mysql-authorization-service"
