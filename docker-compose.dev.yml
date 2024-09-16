@@ -1,6 +1,6 @@
 services:
     authorization:
-        image: authorization:latest
+        image: miloskec/authorization:latest
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         #   ports:

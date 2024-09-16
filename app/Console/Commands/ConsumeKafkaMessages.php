@@ -31,8 +31,8 @@ class ConsumeKafkaMessages extends Command
     {
         $this->info('Starting Kafka consumer...');
         $consumer = Kafka::consumer([config('kafka.topics.user_created.topic')])
-            ->withBrokers(config('brokers'))
-            ->withConsumerGroupId(config('kafka.topics.user_created.topic').'_authorization')
+            ->withBrokers(config('kafka.brokers'))
+            ->withConsumerGroupId(config('kafka.topics.user_created.topic') . '_authorization')
             ->withAutoCommit()
             ->withHandler(function (ConsumerMessage $message, MessageConsumer $consumer) {
                 $user = $this->handleUser($message);
@@ -67,6 +67,5 @@ class ConsumeKafkaMessages extends Command
             return;
         }
         $user->assignRole('user');
-
     }
 }
