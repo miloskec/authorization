@@ -6,11 +6,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Activitylog\LogOptions;
+use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Permission\Traits\HasRoles;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable
+/**
+ * @property int $id
+ * @property string $email
+ * @property string $username
+ * @property string $full_name
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ */
+class User extends Authenticatable implements JWTSubject
 {
-    use HasFactory, Notifiable, HasRoles;
+    use HasFactory, HasRoles, Notifiable, LogsActivity;
 
     /**
      * The attributes that are mass assignable.
@@ -21,7 +32,30 @@ class User extends Authenticatable
         'username',
         'full_name',
         'email',
-        'user_id'
+        'user_id',
     ];
 
+    // Get the identifier that will be stored in the subject claim of the JWT.
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    // Return a key-value array, containing any custom claims to be added to the JWT.
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
+    /**
+     * Get the activity log options for the model.
+     */
+    public function getActivitylogOptions(): LogOptions
+    {
+        return LogOptions::defaults()
+            ->logAll() // Logs all attributes
+            ->logOnlyDirty()
+            ->useLogName('user')
+            ->setDescriptionForEvent(fn (string $eventName) => "User has been {$eventName}");
+    }
 }

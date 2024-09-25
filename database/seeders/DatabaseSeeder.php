@@ -10,7 +10,7 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-    public function run(): void
+    /* public function run(): void
     {
         User::factory()->create([
             'username' => 'admin',
@@ -25,5 +25,5 @@ class DatabaseSeeder extends Seeder
         User::factory(8)->create();
 
         $this->call(RoleSeeder::class);
-    }
+    } */
 }
