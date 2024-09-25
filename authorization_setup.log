@@ -1,0 +1,223 @@
+{"message":"Header:","context":{},"level":200,"level_name":"INFO","channel":"local","datetime":"2024-07-12T22:56:56.577960+02:00","extra":{}}
+Starting Kafka consumer...
+%3|1720914416.422|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%6|1720914416.423|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 56039144ms in state UP)
+%3|1720914416.423|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 56039144ms in state UP)
+%6|1720914416.424|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 56039136ms in state UP)
+%3|1720914416.424|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1720914416.424|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 56039136ms in state UP)
+%3|1720914416.424|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1720914416.424|ERROR|rdkafka#consumer-1| [thrd:GroupCoordinator]: 2/2 brokers are down
+%3|1720914416.424|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1720914416.424|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1720914416.655|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1720914416.714|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1720914416.714|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1720914416.734|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1720914416.734|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1720914418.045|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.8:9092 failed: Connection refused (after 387ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1720914426.438|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 4509ms in state CONNECT)
+%3|1720914426.438|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 4509ms in state CONNECT)
+%4|1720914426.438|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/1: Metadata request failed: broker down: Local: Host resolution failure (0ms): Permanent
+{"message":"Header:","context":{},"level":200,"level_name":"INFO","channel":"local","datetime":"2024-07-14T01:54:17.428135+02:00","extra":{}}
+Starting Kafka consumer...
+{"message":"Header:","context":{},"level":200,"level_name":"INFO","channel":"local","datetime":"2024-07-14T18:56:04.224871+02:00","extra":{}}
+Starting Kafka consumer...
+%3|1721008848.295|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%6|1721008848.296|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 40344523ms in state UP)
+%3|1721008848.296|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%6|1721008848.295|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 27846699ms in state UP)
+%3|1721008848.296|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 27846699ms in state UP)
+%3|1721008848.296|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%6|1721008848.296|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 27846702ms in state UP)
+%3|1721008848.296|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%3|1721008848.296|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 27846702ms in state UP)
+%3|1721008848.297|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 2ms in state CONNECT)
+%3|1721008848.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 2ms in state CONNECT)
+%3|1721008848.298|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721008848.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721008848.296|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 40344523ms in state UP)
+%3|1721008848.298|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 2ms in state CONNECT)
+%3|1721008848.298|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 2ms in state CONNECT)
+%3|1721008848.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 2ms in state CONNECT)
+%3|1721008848.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 2ms in state CONNECT)
+%3|1721008848.495|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.495|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.576|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721008848.596|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.596|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.604|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.604|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.644|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.645|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721008848.836|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721008855.655|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3422ms in state CONNECT)
+%3|1721008855.655|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3422ms in state CONNECT)
+%4|1721008855.656|METADATA|rdkafka#consumer-1| [thrd:main]: kafka:9092/1: Metadata request failed: broker down: Local: Host resolution failure (0ms): Permanent
+Starting Kafka consumer...
+%6|1721052775.008|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 12662974ms in state UP)
+%3|1721052775.008|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 12662974ms in state UP)
+%3|1721052775.008|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%4|1721052775.008|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 12663976ms in state UP)
+%3|1721052775.008|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%3|1721052775.017|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 12663976ms in state UP)
+%3|1721052775.538|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 530ms in state CONNECT)
+%3|1721052775.538|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 530ms in state CONNECT)
+%3|1721052775.538|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 310ms in state CONNECT)
+%3|1721052775.587|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 579ms in state CONNECT)
+%3|1721052775.587|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 579ms in state CONNECT)
+%3|1721052775.698|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721052775.698|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721052775.877|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721052775.877|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721052776.227|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+Starting Kafka consumer...
+Starting Kafka consumer...
+Starting Kafka consumer...
+%3|1721057872.296|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%6|1721057872.296|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 1739367ms in state UP)
+%3|1721057872.297|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 1739367ms in state UP)
+%6|1721057872.297|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 907886ms in state UP)
+%6|1721057872.297|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 907884ms in state UP)
+%3|1721057872.297|ERROR|rdkafka#consumer-1| [thrd:GroupCoordinator]: 2/2 brokers are down
+%3|1721057872.297|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 907886ms in state UP)
+%3|1721057872.297|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 907884ms in state UP)
+%4|1721057872.297|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 1740369ms in state UP)
+%3|1721057872.297|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%3|1721057872.297|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 1740369ms in state UP)
+%3|1721057872.297|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%3|1721057872.298|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721057872.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721057872.298|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721057872.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%6|1721057872.298|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 1341059ms in state UP)
+%3|1721057872.298|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721057872.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 1341059ms in state UP)
+%3|1721057872.298|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721057872.298|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721057872.299|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721057872.299|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721057872.299|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%6|1721057872.299|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 1341063ms in state UP)
+%3|1721057872.300|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%3|1721057872.300|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 1341063ms in state UP)
+%6|1721057872.300|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 907889ms in state UP)
+%3|1721057872.300|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%3|1721057872.300|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721057872.300|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721057872.420|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721057872.451|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.451|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.482|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.482|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.500|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.500|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.572|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057872.572|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057873.056|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057873.056|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057873.059|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 108ms in state CONNECT)
+%3|1721057875.544|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 1870ms in state CONNECT)
+%3|1721057875.544|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 1870ms in state CONNECT)
+%3|1721057876.588|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3288ms in state CONNECT)
+%3|1721057876.588|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3331ms in state CONNECT)
+%3|1721057876.588|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3288ms in state CONNECT)
+%4|1721057876.588|METADATA|rdkafka#consumer-1| [thrd:main]: kafka:9092/1: Metadata request failed: broker down: Local: Host resolution failure (0ms): Permanent
+%3|1721057876.854|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3312ms in state CONNECT)
+%3|1721057876.854|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3312ms in state CONNECT)
+%3|1721057876.917|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3302ms in state CONNECT)
+%3|1721057876.917|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3302ms in state CONNECT)
+%3|1721057881.231|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3289ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057881.231|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3289ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721057881.546|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3290ms in state CONNECT, 1 identical error(s) suppressed)
+Starting Kafka consumer...
+%3|1721070036.201|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%6|1721070036.201|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 218162ms in state UP)
+%3|1721070036.201|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 218162ms in state UP)
+%4|1721070036.202|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 220162ms in state UP)
+%3|1721070036.202|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%3|1721070036.202|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 220162ms in state UP)
+%3|1721070036.202|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070036.202|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070036.202|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070036.203|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070036.415|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070036.415|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070036.474|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070036.474|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070040.643|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3314ms in state CONNECT)
+%3|1721070040.643|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3314ms in state CONNECT)
+%3|1721070040.959|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3359ms in state CONNECT)
+%3|1721070040.959|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3359ms in state CONNECT)
+%4|1721070040.959|METADATA|rdkafka#consumer-1| [thrd:main]: kafka:9092/1: Metadata request failed: broker down: Local: Host resolution failure (0ms): Permanent
+Starting Kafka consumer...
+%3|1721070733.278|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%6|1721070733.278|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 218987ms in state UP)
+%6|1721070733.278|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 219988ms in state UP)
+%3|1721070733.278|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 218987ms in state UP)
+%3|1721070733.278|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 219988ms in state UP)
+%3|1721070733.278|ERROR|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: 2/2 brokers are down
+%3|1721070733.279|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070733.279|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070733.280|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721070733.280|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 1ms in state CONNECT)
+%3|1721070733.289|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721070733.527|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070733.527|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070733.574|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070733.574|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721070738.123|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3710ms in state CONNECT)
+%3|1721070738.123|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3710ms in state CONNECT)
+%3|1721070738.123|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3748ms in state CONNECT)
+%4|1721070738.123|METADATA|rdkafka#consumer-1| [thrd:main]: kafka:9092/1: Metadata request failed: broker down: Local: Host resolution failure (0ms): Permanent
+%3|1721070738.123|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3748ms in state CONNECT)
+Starting Kafka consumer...
+%6|1721071385.524|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Disconnected (after 376905ms in state UP)
+%3|1721071385.524|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Disconnected (after 376905ms in state UP)
+%3|1721071385.524|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%6|1721071385.525|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Disconnected (after 375905ms in state UP)
+%3|1721071385.525|ERROR|rdkafka#consumer-1| [thrd:GroupCoordinator]: 2/2 brokers are down
+%3|1721071385.525|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%3|1721071385.525|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721071385.525|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Disconnected (after 375905ms in state UP)
+%3|1721071385.525|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721071385.525|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721071385.617|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1721071385.698|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721071385.698|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721071385.791|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721071385.791|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Connect to ipv4#172.19.0.6:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)
+%3|1721071390.019|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3406ms in state CONNECT)
+%3|1721071390.019|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: Failed to resolve 'kafka:9092': Name or service not known (after 3406ms in state CONNECT)
+%3|1721071390.019|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3392ms in state CONNECT)
+%3|1721071390.019|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: Failed to resolve 'kafka:9092': Name or service not known (after 3392ms in state CONNECT)
+%4|1721071390.019|METADATA|rdkafka#consumer-1| [thrd:main]: GroupCoordinator/1: Metadata request failed: broker down: Local: Host resolution failure (0ms): Permanent
+Starting Kafka consumer...
+%3|1721251779.126|ERROR|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: 1/1 brokers are down
+%4|1721251779.173|SESSTMOUT|rdkafka#consumer-1| [thrd:main]: Consumer group session timed out (in join-state steady) after 40644000 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group
+%4|1721251779.173|MAXPOLL|rdkafka#consumer-1| [thrd:main]: Application maximum poll interval (300000ms) exceeded by 40320100ms (adjust max.poll.interval.ms for long-running message processing): leaving group
+%5|1721251779.175|REQTMOUT|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Timed out FetchRequest in flight (after 40636503ms, timeout #0)
+%4|1721251779.175|REQTMOUT|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1721251779.175|FAIL|rdkafka#consumer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/1: 1 request(s) timed out: disconnect (after 62267290ms in state UP)
+%5|1721251779.252|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out HeartbeatRequest in flight (after 40644020ms, timeout #0)
+%4|1721251779.252|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1721251779.252|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: 1 request(s) timed out: disconnect (after 62266364ms in state UP)
+%3|1721251779.252|ERROR|rdkafka#consumer-1| [thrd:GroupCoordinator]: 2/2 brokers are down
+{"message":"[CONSUMER] Error to consume message","context":{"message":{"err":-147,"topic_name":null,"timestamp":-1,"partition":0,"payload":"Application maximum poll interval (300000ms) exceeded by 40320100ms","len":67,"key":null,"offset":-1001,"headers":[],"opaque":null},"throwable":null},"level":400,"level_name":"ERROR","channel":"PHP-KAFKA-CONSUMER-ERROR","datetime":"2024-07-18T10:02:23.889955+01:00","extra":{"uid":"d225e296a0ad9581250540536e34d802"}}
+%4|1721293344.285|COMMITFAIL|rdkafka#consumer-1| [thrd:main]: Offset commit (unassigned partitions) failed for 1/1 partition(s) in join-state wait-unassign-to-complete: Broker: Unknown member: user_created_topic[0]@3(Broker: Unknown member)
+{"message":"Error: Junges\\Kafka\\Exceptions\\ConsumerException :: Local: Maximum application poll interval (max.poll.interval.ms) exceeded in /var/www/html/vendor/mateusjunges/laravel-kafka/src/Consumers/Consumer.php on line 437","context":{},"level":400,"level_name":"ERROR","channel":"local","datetime":"2024-07-18T10:02:24.447823+01:00","extra":{}}
+
+In Consumer.php line 437:
+                                                                            
+  Local: Maximum application poll interval (max.poll.interval.ms) exceeded  
+                                                                            
+
+%3|1721293345.090|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: kafka:9092/1: 1 request(s) timed out: disconnect (after 62267290ms in state UP)
+%3|1721293345.093|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: kafka:9092: 1 request(s) timed out: disconnect (after 62266364ms in state UP)
+%5|1721293350.103|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out LeaveGroupRequest in flight (after 5013ms, timeout #0): possibly held back by preceeding blocking JoinGroupRequest with timeout in 297871ms
+%4|1721293350.103|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1721293350.103|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: 1 request(s) timed out: disconnect (after 6033ms in state UP, 1 identical error(s) suppressed)
+Starting Kafka consumer...
+Starting Kafka consumer...
+Starting Kafka consumer...
+Starting Kafka consumer...
