@@ -1,5 +1,6 @@
 <?php
 
+use Monolog\Formatter\JsonFormatter;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -98,7 +99,7 @@ return [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
-            'formatter' => env('LOG_STDERR_FORMATTER'),
+            'formatter' => JsonFormatter::class,
             'with' => [
                 'stream' => 'php://stderr',
             ],
@@ -127,12 +128,17 @@ return [
             'path' => storage_path('logs/laravel.log'),
         ],
 
-        'authorization' => [
+        'authz' => [
             'driver' => 'daily',
             'path' => base_path('/logs/laravel-json-authorization.json'),
             'level' => 'debug',
             'days' => 90,
             'formatter' => Monolog\Formatter\JsonFormatter::class,
+        ],
+        'authorization' => [
+            'driver' => 'stack',
+            'channels' => ['authz', 'stderr'],
+            'ignore_exceptions' => false,
         ],
 
     ],
