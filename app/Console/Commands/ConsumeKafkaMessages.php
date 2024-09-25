@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Models\User;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Log;
 use Junges\Kafka\Contracts\ConsumerMessage;
 use Junges\Kafka\Contracts\MessageConsumer;
 use Junges\Kafka\Facades\Kafka;
@@ -33,7 +32,7 @@ class ConsumeKafkaMessages extends Command
         $this->info('Starting Kafka consumer...');
         $consumer = Kafka::consumer([config('kafka.topics.user_created.topic')])
             ->withBrokers(config('brokers'))
-            ->withConsumerGroupId(config('kafka.topics.user_created.topic') . '_authorization')
+            ->withConsumerGroupId(config('kafka.topics.user_created.topic').'_authorization')
             ->withAutoCommit()
             ->withHandler(function (ConsumerMessage $message, MessageConsumer $consumer) {
                 $user = $this->handleUser($message);
@@ -56,7 +55,7 @@ class ConsumeKafkaMessages extends Command
     protected function createUser(array $user): void
     {
         $isAdmin = $user['is_admin'] ?? false;
-        if (!$isAdmin) {
+        if (! $isAdmin) {
             unset($user['is_admin']);
         }
 
@@ -64,9 +63,10 @@ class ConsumeKafkaMessages extends Command
 
         if ($isAdmin) {
             $user->assignRole('admin');
+
             return;
         }
         $user->assignRole('user');
-        return;
+
     }
 }
